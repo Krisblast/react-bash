@@ -74,6 +74,7 @@ export const cat = {
 
 export const mkdir = {
     exec: (state, { args }) => {
+        console.log('test');
         const path = args[0];
         const relativePath = path.split('/');
         const newDirectory = relativePath.pop();
